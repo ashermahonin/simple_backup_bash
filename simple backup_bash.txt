@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /home
+uptime >> backup.txt
+scp /home/backup.txt root@192.168.1.2:/home/backup2.txt
+find asik2@192.168.1.2:/home -mtime +7 -delete
